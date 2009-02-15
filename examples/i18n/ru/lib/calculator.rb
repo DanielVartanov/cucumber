@@ -6,5 +6,9 @@ class Calculator
   
   def +
     @args.inject(0){|n,sum| sum+=n}
-  end  
+  end
+
+  def /
+    @args[0].to_f / @args[1].to_f
+  end
 end

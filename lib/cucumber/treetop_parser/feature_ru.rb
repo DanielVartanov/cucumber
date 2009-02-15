@@ -1760,11 +1760,11 @@ module Feature
     end
 
     i0, s0 = index, []
-    if input.index("Scenario Outline", index) == index
-      r1 = (SyntaxNode).new(input, index...(index + 16))
-      @index += 16
+    if input.index("Структура сценария", index) == index
+      r1 = (SyntaxNode).new(input, index...(index + 35))
+      @index += 35
     else
-      terminal_parse_failure("Scenario Outline")
+      terminal_parse_failure("Структура сценария")
       r1 = nil
     end
     s0 << r1
@@ -1856,11 +1856,11 @@ module Feature
     end
 
     i0, s0 = index, []
-    if input.index("Examples", index) == index
-      r1 = (SyntaxNode).new(input, index...(index + 8))
-      @index += 8
+    if input.index("Значения", index) == index
+      r1 = (SyntaxNode).new(input, index...(index + 16))
+      @index += 16
     else
-      terminal_parse_failure("Examples")
+      terminal_parse_failure("Значения")
       r1 = nil
     end
     s0 << r1

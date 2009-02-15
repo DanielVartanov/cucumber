@@ -246,7 +246,9 @@
 # Russian
 "ru":
   feature: Функционал
-  scenario: Сценарий    
+  scenario: Сценарий
+  scenario_outline: Структура сценария
+  examples: Значения
   more_examples: Ещё примеры
   given: Допустим
   when: Если
