@@ -1637,11 +1637,11 @@ module Feature
     end
 
     i0 = index
-    if input.index("Сначала", index) == index
-      r1 = (SyntaxNode).new(input, index...(index + 14))
-      @index += 14
+    if input.index("Допустим", index) == index
+      r1 = (SyntaxNode).new(input, index...(index + 16))
+      @index += 16
     else
-      terminal_parse_failure("Сначала")
+      terminal_parse_failure("Допустим")
       r1 = nil
     end
     if r1
@@ -1677,11 +1677,11 @@ module Feature
           if r4
             r0 = r4
           else
-            if input.index("Но", index) == index
-              r5 = (SyntaxNode).new(input, index...(index + 4))
-              @index += 4
+            if input.index("А", index) == index
+              r5 = (SyntaxNode).new(input, index...(index + 2))
+              @index += 2
             else
-              terminal_parse_failure("Но")
+              terminal_parse_failure("А")
               r5 = nil
             end
             if r5
@@ -1808,11 +1808,11 @@ module Feature
     end
 
     i0, s0 = index, []
-    if input.index("More Examples", index) == index
-      r1 = (SyntaxNode).new(input, index...(index + 13))
-      @index += 13
+    if input.index("Ещё примеры", index) == index
+      r1 = (SyntaxNode).new(input, index...(index + 21))
+      @index += 21
     else
-      terminal_parse_failure("More Examples")
+      terminal_parse_failure("Ещё примеры")
       r1 = nil
     end
     s0 << r1
@@ -1904,11 +1904,11 @@ module Feature
     end
 
     i0, s0 = index, []
-    if input.index("ДанныйСценарий", index) == index
-      r1 = (SyntaxNode).new(input, index...(index + 28))
-      @index += 28
+    if input.index("GivenScenario", index) == index
+      r1 = (SyntaxNode).new(input, index...(index + 13))
+      @index += 13
     else
-      terminal_parse_failure("ДанныйСценарий")
+      terminal_parse_failure("GivenScenario")
       r1 = nil
     end
     s0 << r1

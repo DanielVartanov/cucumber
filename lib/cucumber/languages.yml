@@ -246,13 +246,13 @@
 # Russian
 "ru":
   feature: Функционал
-  scenario: Сценарий
-  given_scenario: ДанныйСценарий
-  given: Сначала
+  scenario: Сценарий    
+  more_examples: Ещё примеры
+  given: Допустим
   when: Если
   then: То
   and: И
-  but: Но
+  but: А
 # Swedish
 "se":
   feature: Egenskap
