@@ -248,6 +248,7 @@
   feature: Функционал
   scenario: Сценарий
   scenario_outline: Структура сценария
+  given_scenario: Дано
   examples: Значения
   more_examples: Ещё примеры
   given: Допустим

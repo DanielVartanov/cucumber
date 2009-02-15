@@ -1,14 +1,22 @@
 class Calculator
-  def push(n)
-    @args ||= []
-    @args << n
+  def initialize
+    @stack = []
   end
-  
+
+  def push(arg)
+    @stack.push arg
+  end
+
+  def result
+    @stack.last
+  end
+
   def +
-    @args.inject(0){|n,sum| sum+=n}
+    @stack.push @stack.pop + @stack.pop
   end
 
   def /
-    @args[0].to_f / @args[1].to_f
+    divisor, dividend = [@stack.pop, @stack.pop] # Hm, @stack.pop(2) doesn't work
+    @stack.push dividend / divisor
   end
 end

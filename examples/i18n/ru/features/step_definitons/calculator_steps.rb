@@ -11,14 +11,14 @@ end
 After do
 end
 
-Given /ввёл число (\d+)/ do |n|
+Given /ввожу число (\d+)/ do |n|
   @calc.push n.to_i
 end
 
-When /я нажимаю "(.*)"/ do |op|
-  @result = @calc.send op
+When /нажимаю "(.*)"/ do |op|
+  @calc.send op
 end
 
 Then /должен увидеть на экране число (\d+)/ do |result|
-  @result.should == result.to_f
+  @calc.result.should == result.to_f
 end

@@ -1904,11 +1904,11 @@ module Feature
     end
 
     i0, s0 = index, []
-    if input.index("GivenScenario", index) == index
-      r1 = (SyntaxNode).new(input, index...(index + 13))
-      @index += 13
+    if input.index("Дано", index) == index
+      r1 = (SyntaxNode).new(input, index...(index + 8))
+      @index += 8
     else
-      terminal_parse_failure("GivenScenario")
+      terminal_parse_failure("Дано")
       r1 = nil
     end
     s0 << r1
